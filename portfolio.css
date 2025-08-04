@@ -1,0 +1,148 @@
+/* AUTO margin & padding set t o 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Enable smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background: url(pic/bg4.jpg) center / cover fixed no-repeat;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.main{
+    width: 100%;
+    background: transparent;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 95%;
+    display: flex;
+    margin: 20px auto;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5) url(pic/background.jpg);  /* background now restricted here */
+    background-blend-mode: overlay;
+    min-height: 150px; /* give navbar enough height */
+    min-width: 1600px; /* ensure navbar is wide enough */
+    border-radius: 12px;   /* rounded corners for the navbar */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* subtle shadow for depth */
+    margin-right: 1%;
+    margin-left: 2%;
+
+}
+
+.navbar .mcu{
+    width: 400px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -6%;
+    filter: brightness(1.5); 
+
+}
+
+.navbar .mcu:hover{
+    filter: brightness(1);
+    transition: 0.3s ease-out;
+}
+
+ul{
+    margin-top: -8%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #14d1b2c7;
+    transition: 0.3s ease-in-out;
+}
+
+ul li a:hover{
+    color: rgb(0, 255, 221);
+    
+}
+
+.info{
+    margin-left: 4%;
+    margin-top: -3%;
+    color: #14d1b2c7;
+
+}
+
+.info h2{
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-family: cursive;
+    text-align: right;
+    margin-top: -6%;
+    margin-right: 5%;
+    
+    
+}
+
+.info h3{
+    font-size: 20px;
+    margin-top: 8px;
+    text-align: right;
+    margin-right: 5%;
+    font-family:fantasy;
+    color: #0ebde9;
+    
+}
+
+.info span{
+    color: #0ebde9;
+
+}
+
+/* Target only content divs with an id (scroll sections) */
+div[id] {
+    min-height: 100vh;
+    padding: 4rem 4%;
+    scroll-margin-top: 170px; /* ensures content is not hidden behind navbar */
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.966);
+
+    /* Transparent base & blending */
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(2px);
+    transition: background 0.6s ease-in-out, backdrop-filter 0.6s ease-in-out;
+}
+
+#about { 
+    background: rgba(144, 231, 3, 0.07); /* soft green */
+    background: linear-gradient to bottom, rgba(144, 231, 3, 0.08);
+
+}         
+
+#documentation {
+    background: rgba(233, 245, 255, 0.09); 
+
+}/* light blue */
+#portfolio { background: rgba(144, 231, 3, 0.07); }      /* soft green */
+#me { background: rgba(233, 245, 255, 0.1); }            /* faint bluish */
+#contact { background: rgba(255, 255, 255, 0.05); }      /* subtle white */
